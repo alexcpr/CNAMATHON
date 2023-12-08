@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#timer {
+    background: rgba(0, 0, 0, .2);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.hero-text {
+    color: #333;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    /* Changement ici pour aligner les fonctionnalités horizontalement */
+}
+
+.feature {
+    flex: 1;
+    /* Ajout de flex pour que chaque fonctionnalité prenne une largeur équitable */
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    /* Fond blanc pour contraster avec la section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère pour la profondeur */
+transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.spec-container, .specs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specs {
+    flex-flow: column wrap;
+    padding-bottom: 50px;
+}
+.spec-container {
+    flex-flow: row wrap;
+}
+
+.spec {
+    flex: 1;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+transition: transform 0.3s ease-in-out;
+}
+
+.spec:hover {
+    transform: scale(1.05);
+}
+
+.spec h3 {
+    margin: 10px;
+    color: #333;
+}
+
+.spec p {
+    margin: 0;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    -webkit-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+    color: unset
+}
+
+a:hover {
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.logo {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+@media screen and (max-width:768px) {
+    .hero {
+        flex-flow: column-reverse;
+    }
+
+    .hero-image {
+        max-height: 250px;
+        padding: 0;
+        padding-bottom: 50px !important;
+    }
+}
