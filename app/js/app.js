@@ -1,4 +1,4 @@
-const launchDate = new Date("2023-12-10T00:00:00").getTime();
+const launchDate = new Date("2023-12-07T00:00:00").getTime();
 
 const updateCountdown = () => {
   const currentDate = new Date().getTime();
